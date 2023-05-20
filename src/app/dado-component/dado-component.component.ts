@@ -6,9 +6,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./dado-component.component.scss']
 })
 export class DadoComponentComponent {
-  @Input()valor:number | undefined;
+  @Input()valor:number=6;
   constructor() { }
   ngOnInit(){
-    this.valor = Math.trunc(Math.random()*6)+1;
   }
 }
