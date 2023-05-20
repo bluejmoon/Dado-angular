@@ -1,1 +1,15 @@
-<app-dado-component></app-dado-component>
+<div style="text-align: center;">
+
+<app-dado-component [valor]="valor1"></app-dado-component>
+
+<app-dado-component [valor]="valor2"></app-dado-component>
+
+<app-dado-component [valor]="valor3"></app-dado-component>
+
+<hr>
+<button (click)="lanzar()">Lanzar dado</button>
+<hr>
+
+<h2>{{resultado}}</h2>
+
+</div>
